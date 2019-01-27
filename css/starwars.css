@@ -1,0 +1,57 @@
+@charset "utf-8";
+h1{
+  text-align: center;
+  color: yellow;
+}
+body{
+  background-image: url(../images/etoile.png);
+}
+@keyframes textIntro{
+  0% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;-
+  }
+}
+@keyframes textAnim {
+
+  0% {
+    opacity: 1;
+    transform: perspective(500px) rotateX(20deg) translateY(-125px);
+  }
+  90%{
+    opacity: 1;
+  }
+  99%{
+    transform: perspective(500px) rotateX(20deg) translateY(-420px);
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.intro {
+  color: cornflowerblue;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding-top: 100px;
+  opacity: 0;
+  animation-duration: 5s;
+  animation-name: textIntro;
+}
+
+.content {
+  text-align: justify;
+  color: yellow;
+  padding: 200px;
+  opacity: 0;
+  animation-duration: 20s;
+  animation-delay: 5s;
+  animation-name: textAnim;
+}
